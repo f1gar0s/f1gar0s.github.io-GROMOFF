@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Store - Магазин одежды</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="container">
+            <span class="logo">FashionStore</span>
+            <nav>
+                 <ul>
+                    <li class="active"><a href="index.html">Главная</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="cart.html">Корзина</a></li>
+                    <li class="btn"><a href="#">Регистрация</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="hero container">
+            <div class="hero--info">
+                <h2>Модная одежда</h2>
+                <h1>Стиль, который мы создаем для вас</h1>
+                <p>Мы предлагаем широкий ассортимент качественной одежды для любого случая. От повседневных образов до вечерних нарядов.</p>
+                <button class="btn">Узнать больше</button>
+            </div>
+            <img src="img/style.jpg" alt="Модная одежда" class="hero-image">
+        </div>  
+
+        <div class="container trends">
+            <a href="catalog.html" class="see_all">СМОТРЕТЬ ВСЕ</a>
+            <h3>Популярные товары</h3>
+            
+            <div class="products">
+                <div class="block">
+                    <img src="img/WFL.jpg" alt="Белый лонгслив" class="product-img">
+                    <span>40 покупок</span>
+                </div>
+                <div class="block">
+                    <img src="img/BFL.jpg" alt="Черный лонгслив" class="product-img">
+                    <span>35 покупок</span>
+                </div>
+                <div class="block">
+                    <img src="img/blackT.jpg" alt="Черная футболка" class="product-img">
+                    <span>28 покупок</span>
+                </div>
+                <div class="block">
+                    <img src="img/Socks.jpg" alt="Модные носки" class="product-img">
+                    <span>32 покупки</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="container big-txt">
+            <h2>FashionStore - это стильная одежда для уверенных в себе людей.</h2>
+        </div>
+
+        <div class="container banner">
+            <div class="text-block">
+                <h2>Наша философия</h2>
+                <p>Мы верим, что одежда - это не просто ткань, а способ самовыражения. Каждая деталь нашего ассортимента тщательно подобрана, чтобы подчеркнуть вашу индивидуальность.</p>
+            </div>
+            <img src="img/patchi.jpg" alt="Коллекция одежды" class="banner-image">
+        </div>
+
+    </div>
+    <div class="back_image">
+        <div class="container bckimg_txt">
+            <h2>Мы предлагаем широкий выбор одежды для любого стиля жизни</h2>
+            <p>От классических решений до современных трендов - в нашем магазине каждый найдет что-то для себя.</p>
+        </div>
+        <div class="container categories">
+            <ul>
+                <li><div class="category"><p>Женская одежда</p></div></li>
+                <li><div class="category"><p>Мужская одежда</p></div></li>
+                <li><div class="category"><p>Детская одежда</p></div></li>
+                <li><div class="category"><p>Аксессуары</p></div></li>
+            </ul>
+        </div>
+        <div class="container categories">
+            <ul>
+                <li><div class="category"><p>Обувь</p></div></li>
+                <li><div class="category"><p>Распродажа</p></div></li>
+            </ul>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="email container">
+            <h2>Подпишитесь на рассылку</h2>
+            <p>Будьте в курсе новых поступлений и специальных предложений.</p>
+            <div class="block">
+                <div>
+                    <h2>Будьте в курсе</h2>
+                    <p>Подпишитесь, чтобы получать последние новости и обновления о наших коллекциях. Мы обещаем не спамить!</p>
+                </div>
+                <div style="position: relative;">
+                    <input type="email" id="emailField" placeholder="Введите email адрес">
+                    <button onclick="checkEmail()">Подписаться</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="blocks container">
+            <div>
+                <span class="logo">FashionStore</span>
+                <p>FashionStore - это стильная одежда для уверенных в себе людей. Мы предлагаем качественные вещи по доступным ценам.</p>
+            </div>
+            <div>
+                <h4>О нас</h4>
+                <ul>
+                    <li>О компании</li>
+                    <li>Портфолио</li>
+                    <li>Вакансии</li>
+                    <li>Контакты</li>  
+                </ul>
+            </div>
+            <div>
+                <h4>Контакты</h4>
+                <p>Наш магазин находится по адресу: г. Москва, ул. Примерная, д. 123</p>
+                <p>+7 (999) 123-45-67</p>
+            </div>
+        </div>
+        <hr>
+        <p>Copyright ® 2023 FashionStore Все права защищены</p>
+    </footer>
+
+    <script>
+        function checkEmail(){
+            let email = document.querySelector('#emailField').value;
+            if(!email.includes('@')) {
+                alert('Нет символа @');
+            } else {
+                alert('Спасибо за подписку!');
+            }
+        }
+    </script>
+</body>
+</html>

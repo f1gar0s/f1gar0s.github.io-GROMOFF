@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Корзина - FashionStore</title>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <header class="container">
+            <span class="logo">FASHIONSTORE</span>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li class="active"><a href="cart.html">Корзина</a></li>
+                    <li class="btn"><a href="#">Регистрация</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Cart Section -->
+        <div class="container cart">
+            <h1>Ваша корзина</h1>
+            <p>Здесь отображаются выбранные товары.</p>
+            <div class="cart-items">
+                <!-- Товары будут добавляться сюда через JS -->
+            </div>
+            <div class="cart-summary">
+                <h3>Итого: <span id="total-price">0 ₽</span></h3>
+                <button class="checkout-btn">Оформить заказ</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-fixed">
+        <div class="blocks container">
+            <div>
+                <span class="logo">FASHIONSTORE</span>
+                <p><strong>FashionStore</strong> – это стильная одежда для уверенных в себе людей. Мы предлагаем качественные вещи по доступным ценам.</p>
+            </div>
+            <div>
+                <h4>О нас</h4>
+                <ul>
+                    <li>О компании</li>
+                    <li>Портфолио</li>
+                    <li>Вакансии</li>
+                    <li>Контакты</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Контакты</h4>
+                <p>Наш магазин находится по адресу: г. Москва, ул. Примерная, д. 123</p>
+                <p>+7 (999) 123-45-67</p>
+            </div>
+        </div>
+        <hr />
+        <p>Copyright © 2023 FashionStore Все права защищены</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

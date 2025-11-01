@@ -1,8 +1,6 @@
-// scripts.js
 document.addEventListener("DOMContentLoaded", function () {
     const cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-    // Отображение корзины
     function renderCart() {
         const cartItemsContainer = document.querySelector(".cart-items");
         const totalPriceElement = document.getElementById("total-price");
